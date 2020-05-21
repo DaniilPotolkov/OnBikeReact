@@ -17,7 +17,7 @@ class Screen extends React.Component {
               <div className="all">
                 <div className="container main-tovar">
                   <div className="col-lg-4">
-                    <h2 className="zagolovok">Готовые наборы</h2>
+                    <h2 className="zagolovok">Готовые наборы </h2>
                   </div>
 
                   <div className="row">
