@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE7g4.ttf) format('truetype');
+}
+.nav-yellow {
+  background-color: #f9c402;
+}
+.nav-yellow img {
+  width: 255px;
+  height: 80px;
+}
+.nav-yellow button {
+  margin-top: 10px;
+  width: 100%;
+  height: 55px;
+  background: #f9c402;
+  border: 2px solid #434242;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  align-items: center;
+  text-align: center;
+  transition-duration: 0.5s;
+  color: #434242;
+}
+.nav-yellow button:hover {
+  background: #434242;
+  color: #ffffff;
+  border: solid #f9c402;
+}
+.nav-yellow p {
+  margin-top: 25px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.nav-black {
+  background-color: #434242;
+}
+.nav-black button {
+  margin-top: 13px;
+  margin-bottom: 13px;
+  width: 160px;
+  height: 47.22px;
+  background: #434242;
+  border: 2px solid #f9c402;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 17px;
+  align-items: center;
+  text-align: center;
+  color: #f9c402;
+  transition-duration: 0.3s;
+}
+.nav-black button:hover {
+  background: #f9c402;
+  color: #434242;
+  border: solid #434242;
+}

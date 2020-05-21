@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE7g4.ttf) format('truetype');
+  }
+  .zagolovok{
+    text-align: center;
+  }
+.main-tovar{
+    flex-direction: row; flex-wrap: wrap; display: flex;
+  }
+  
+  .all {
+    margin-top: 31px;
+  }
+  .all .tovar {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #434242;
+    border-radius: 10px;
+  }
+  .all .tovar img {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .all .tovar p {
+    margin: 0 auto;
+    margin: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+  }
+  .all .tovar .podrobnee {
+    margin-left: 10%;
+    width: 80%;
+    height: 42px;
+    background: #f9c402;
+    border: 2px solid #3e3d3d;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    align-items: center;
+    text-align: center;
+    color: #434242;
+  }
+  
