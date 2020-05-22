@@ -331,76 +331,62 @@ class Screen extends React.Component {
               </div>
             </Route>
             <Route path="/">
-              <div className="container">
-                <div className="row">
-                  <div className="col-lg-12">
-                    <h2>Популярные товары</h2>
-                    <div className="slider-hot">
-                      <div className="col-lg-3">
-                        <div className="tovar">
-                          <img src="/img/complect.jpg" alt=""></img>
-                          <p>Комплект электрификации Лайт 250</p>
-                          <p className="price">21 000 ₽</p>
-                          <button className="podrobnee">
-                            Подробнее о товаре
-                          </button>
-                        </div>
+            <div className="all">
+                <div className="container main-tovar">
+                  <div className="col-lg-4">
+                    <h2 className="zagolovok">Популярные товары</h2>
+                  </div>
+
+                  <div className="row">
+                    <div className="col-lg-3">
+                      <div className="tovar">
+                        <img src="/img/complect.jpg" alt=""></img>
+                        <p>Комплект электрификации Лайт 250</p>
+                        <p className="price">21 000 ₽</p>
+                        <button className="podrobnee">
+                          Подробнее о товаре
+                        </button>
                       </div>
-                      <div className="col-lg-3">
-                        <div className="tovar">
-                          <img src="/img/complect.jpg" alt=""></img>
-                          <p>Комплект электрификации Лайт 250</p>
-                          <p className="price">21 000 ₽</p>
-                          <button className="podrobnee">
-                            Подробнее о товаре
-                          </button>
-                        </div>
+                    </div>
+                    <div className="col-lg-3">
+                      <div className="tovar">
+                        <img src="/img/complect.jpg" alt=""></img>
+                        <p>Комплект электрификации Лайт 250</p>
+                        <p className="price">21 000 ₽</p>
+                        <button className="podrobnee">
+                          Подробнее о товаре
+                        </button>
                       </div>
-                      <div className="col-lg-3">
-                        <div className="tovar">
-                          <img src="/img/complect.jpg" alt=""></img>
-                          <p>Комплект электрификации Лайт 250</p>
-                          <p className="price">21 000 ₽</p>
-                          <button className="podrobnee">
-                            Подробнее о товаре
-                          </button>
-                        </div>
+                    </div>
+                    <div className="col-lg-3">
+                      <div className="tovar">
+                        <img src="/img/complect.jpg" alt=""></img>
+                        <p>Комплект электрификации Лайт 250</p>
+                        <p className="price">21 000 ₽</p>
+                        <button className="podrobnee">
+                          Подробнее о товаре
+                        </button>
                       </div>
-                      <div className="col-lg-3">
-                        <div className="tovar">
-                          <img src="/img/complect.jpg" alt=""></img>
-                          <p>Комплект электрификации Лайт 250</p>
-                          <p className="price">21 000 ₽</p>
-                          <button className="podrobnee">
-                            Подробнее о товаре
-                          </button>
-                        </div>
-                      </div>
-                      <div className="col-lg-3">
-                        <div className="tovar">
-                          <img src="/img/complect.jpg" alt=""></img>
-                          <p>Комплект электрификации Лайт 250</p>
-                          <p className="price">21 000 ₽</p>
-                          <button className="podrobnee">
-                            Подробнее о товаре
-                          </button>
-                        </div>
-                      </div>
-                      <div className="col-lg-3">
-                        <div className="tovar">
-                          <img src="/img/complect.jpg" alt=""></img>
-                          <p>Комплект электрификации Лайт 250</p>
-                          <p className="price">21 000 ₽</p>
-                          <button className="podrobnee">
-                            Подробнее о товаре
-                          </button>
-                        </div>
+                    </div>
+                    <div className="col-lg-3">
+                      <div className="tovar">
+                        <img src="/img/complect.jpg" alt=""></img>
+                        <p>Комплект электрификации Лайт 250</p>
+                        <p className="price">21 000 ₽</p>
+                        <button className="podrobnee">
+                          Подробнее о товаре
+                        </button>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </Route>
+            <Route path=""></Route>
+            <Route path=""></Route>
+            <Route path=""></Route>
+            <Route path=""></Route>
+            <Route path=""></Route>
             <Route path="*">
               <h1>Doesn`t exist</h1>
               <h1> 404 not found</h1>
