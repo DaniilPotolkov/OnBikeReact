@@ -2,7 +2,7 @@ import React from "react";
 import './Header.css'
 import { NavLink, Switch } from 'react-router-dom'
 import { Navbar, NavItem, NavDropdown, MenuItem, Nav } from 'react-bootstrap';
-import Logo from './logo_black.png';
+import Logo_Header from './logo_black.png';
 
 class Header extends React.Component {
   render() {
@@ -12,16 +12,16 @@ class Header extends React.Component {
         <div className="container">
             <div className="row">
                 <div className="col-xl-3">
-                <Navbar.Brand><NavLink to="/glawnay" activeClassName="selected" className="menu_item" ><img src="{Logo}" alt=""></img></NavLink></Navbar.Brand>
+                <Navbar.Brand><NavLink to="/" activeClassName="selected" className="menu_item" ><img src={Logo_Header} alt='website logo' /></NavLink></Navbar.Brand>
                 </div>
                 <div className="col-xl-2 offset-xl-1">
-                <Nav><NavLink to="/dostavka" activeClassName="selected" className="menu_item" ><button>Доставка и оплата</button></NavLink></Nav>
+                <Nav><NavLink to="/dostavka" activeClassName="selected"  ><button>Доставка и оплата</button></NavLink></Nav>
                 </div>
                 <div className="col-xl-2">
-                <Nav><NavLink to="/garantee" activeClassName="selected" className="menu_item" ><button>Гарантия</button></NavLink></Nav>
+                <Nav><NavLink to="/garantee" activeClassName="selected" ><button>Гарантия</button></NavLink></Nav>
                 </div>
                 <div className="col-xl-2">
-                <Nav><NavLink to="/contact" activeClassName="selected" className="menu_item" ><button>Контакты</button></NavLink></Nav>
+                <Nav><NavLink to="/contact" activeClassName="selected" ><button>Контакты</button></NavLink></Nav>
                 </div>
                 <div className="col-xl-2">
                     <p>+7 960 312 01 07</p>

@@ -5,6 +5,17 @@
     font-display: swap;
     src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE7g4.ttf) format('truetype');
   }
+  .bold{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    
+  }
+  h2{
+    margin-top: 25px;
+    text-align: center;
+  }
   .zagolovok{
     text-align: center;
   }
@@ -15,17 +26,17 @@
   .all {
     margin-top: 31px;
   }
-  .all .tovar {
+.tovar {
     margin: 10px;
     padding: 10px;
     border: 1px solid #434242;
     border-radius: 10px;
   }
-  .all .tovar img {
+ .tovar img {
     margin: 0 auto;
     width: 100%;
   }
-  .all .tovar p {
+ .tovar p {
     margin: 0 auto;
     margin: 10px;
     font-family: Montserrat;
@@ -36,7 +47,7 @@
     text-align: center;
     color: #000000;
   }
-  .all .tovar .podrobnee {
+.tovar .podrobnee {
     margin-left: 10%;
     width: 80%;
     height: 42px;
@@ -54,3 +65,8 @@
     color: #434242;
   }
   
+  @media (max-width: 767px) {
+    iframe {
+      display: none;
+    }
+  }
