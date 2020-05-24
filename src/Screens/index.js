@@ -1,9 +1,11 @@
 import React from "react";
 import Header from "./../Components/Header/Header";
 import Footer from "./../Components/Footer/Footer";
+import ProductCard from './../Components/ProductCrad/ProductCard'
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import UnderConstruct from "./UnderConstruct/UnderConstruct";
 import "./index1.css";
+import Slider from "./../Components/Slider/Slider";
 
 class Screen extends React.Component {
   render() {
@@ -331,7 +333,7 @@ class Screen extends React.Component {
               </div>
             </Route>
             <Route path="/">
-            <div className="all">
+            {/* <div className="all">
                 <div className="container main-tovar">
                   <div className="col-lg-4">
                     <h2 className="zagolovok">Популярные товары</h2>
@@ -380,7 +382,12 @@ class Screen extends React.Component {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
+              <Slider />
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
             </Route>
             <Route path=""></Route>
             <Route path=""></Route>
