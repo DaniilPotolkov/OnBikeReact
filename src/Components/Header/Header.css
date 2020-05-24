@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 
+.header{
+  padding: 0;
+}
 .nav-yellow {
   background-color: #f9c402;
 }
@@ -25,6 +28,12 @@
   text-align: center;
   transition-duration: 0.5s;
   color: #434242;
+}
+.menu_item{
+  margin: auto 15px;
+}
+.last {
+  margin-right: 0;
 }
 .nav-yellow button:hover {
   background: #434242;
