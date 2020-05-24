@@ -1,7 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
 import ProductCard from "../ProductCrad/ProductCard";
-import productImg from "./../../img/complect.jpg";
 import "pure-react-carousel/dist/react-carousel.es.css";
 
 function SampleNextArrow(props) {
@@ -30,48 +29,7 @@ function SamplePrevArrow(props) {
 
 export default class CustomSlider extends React.Component {
   render() {
-    const products = [
-      {
-        name: "zhopa",
-        price: "900",
-        img: productImg,
-      },
-      {
-        name: "zhopa1",
-        price: "900",
-        img: productImg,
-      },
-      {
-        name: "zhopa2",
-        price: "900",
-        img: productImg,
-      },
-      {
-        name: "zhopa3",
-        price: "900",
-        img: productImg,
-      },
-      {
-        name: "zhopa4vozmexdie",
-        price: "900",
-        img: productImg,
-      },
-      {
-        name: "zhopa5vozvracheniechlenavzhopudani",
-        price: "900",
-        img: productImg,
-      },
-      {
-        name: "zhopa5vozvracheniechlenavzhopudani",
-        price: "900",
-        img: productImg,
-      },
-      {
-        name: "zhopa5vozvracheniechlenavzhopudani",
-        price: "900",
-        img: productImg,
-      },
-    ];
+
     const settings = {
       dots: true,
       infinite: true,
@@ -109,13 +67,14 @@ export default class CustomSlider extends React.Component {
         }
       ]
     };
+    
     return (
       <div className="slider_holder">
       <Slider {...settings}>
-        {products.map((product) => {
+        {this.props.products.map((product) => {
           return (
             <div className="">
-              <ProductCard product={product}/>
+              <ProductCard product={product} modal={this.props.modal}/>
             </div>
           );
         })}
