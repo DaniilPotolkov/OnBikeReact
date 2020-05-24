@@ -1,9 +1,7 @@
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE7g4.ttf) format('truetype');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+.header{
+  padding: 0;
 }
 .nav-yellow {
   background-color: #f9c402;
@@ -14,21 +12,28 @@
 }
 .nav-yellow button {
   margin-top: 10px;
-  width: 100%;
+  width: 160px;
+  height: 47.22px;
   height: 55px;
   background: #f9c402;
   border: 2px solid #434242;
   box-sizing: border-box;
   border-radius: 10px;
-  font-family: Montserrat;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 17px;
   align-items: center;
   text-align: center;
   transition-duration: 0.5s;
   color: #434242;
+}
+.menu_item{
+  margin: auto 15px;
+}
+.last {
+  margin-right: 0;
 }
 .nav-yellow button:hover {
   background: #434242;
@@ -37,7 +42,7 @@
 }
 .nav-yellow p {
   margin-top: 25px;
-  font-family: Montserrat;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -58,10 +63,10 @@
   border: 2px solid #f9c402;
   box-sizing: border-box;
   border-radius: 10px;
-  font-family: Montserrat;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 17px;
   align-items: center;
   text-align: center;
@@ -72,4 +77,8 @@
   background: #f9c402;
   color: #434242;
   border: solid #434242;
+}
+
+button:focus {
+  outline:0 !important
 }

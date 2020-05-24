@@ -4,7 +4,6 @@ import Logo from './img/LOGO_tis.png';
 
 class UnderConstruct extends React.Component {
   render() {
-    console.warn(`${window.location.origin}${Logo}`);
     
     return (
       <>

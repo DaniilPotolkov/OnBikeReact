@@ -1,8 +1,13 @@
 import React from "react";
 import Header from "./../Components/Header/Header";
+import Footer from "./../Components/Footer/Footer";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
-import UnderConstruct from "./UnderConstruct/UnderConstruct";
+import MainScreen from "./Main/MainScreen";
+import DeliverScreen from './Delivery/DeliveryScreem';
+import GarantyScreen from './Garanty/GarantyScreen';
+import ContactScreen from "./Contact/ContactScreen";
 import "./index1.css";
+
 class Screen extends React.Component {
   render() {
     return (
@@ -10,9 +15,15 @@ class Screen extends React.Component {
         <div className="overalContainer">
           <Header />
           <Switch>
-            <Route path="/dostavka"></Route>
-            <Route path="/garantee"></Route>
-            <Route path="/contact"></Route>
+            <Route path="/dostavka">
+              <DeliverScreen />
+            </Route>
+            <Route path="/garantee">
+              <GarantyScreen />
+            </Route>
+            <Route path="/contact">
+              <ContactScreen />
+            </Route>
             <Route path="/gotov">
               <div className="all">
                 <div className="container main-tovar">
@@ -66,13 +77,19 @@ class Screen extends React.Component {
               </div>
             </Route>
             <Route path="/">
-            <h2>Ты хуй</h2>
+              <MainScreen />
             </Route>
+            <Route path=""></Route>
+            <Route path=""></Route>
+            <Route path=""></Route>
+            <Route path=""></Route>
+            <Route path=""></Route>
             <Route path="*">
               <h1>Doesn`t exist</h1>
               <h1> 404 not found</h1>
             </Route>
           </Switch>
+          <Footer />
         </div>
       </Router>
     );

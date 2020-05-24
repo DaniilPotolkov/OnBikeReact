@@ -1,9 +1,22 @@
-@font-face {
-    font-family: 'Montserrat';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+  .bold{
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE7g4.ttf) format('truetype');
+    font-weight: bold;
+    font-size: 16px;
+    
+  }
+  .slick-dots {
+    bottom: auto;
+  }
+  .slider_holder{
+    padding: 0 30px;
+  }
+  h2{
+    
+    margin-top: 25px;
+    text-align: center;
   }
   .zagolovok{
     text-align: center;
@@ -15,28 +28,30 @@
   .all {
     margin-top: 31px;
   }
-  .all .tovar {
+.tovar {
     margin: 10px;
     padding: 10px;
     border: 1px solid #434242;
     border-radius: 10px;
   }
-  .all .tovar img {
+ .tovar img {
     margin: 0 auto;
     width: 100%;
   }
-  .all .tovar p {
+ .tovar p {
     margin: 0 auto;
     margin: 10px;
-    font-family: Montserrat;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 16px;
     text-align: center;
     color: #000000;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
-  .all .tovar .podrobnee {
+.tovar .podrobnee {
     margin-left: 10%;
     width: 80%;
     height: 42px;
@@ -44,9 +59,9 @@
     border: 2px solid #3e3d3d;
     box-sizing: border-box;
     border-radius: 10px;
-    font-family: Montserrat;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 13px;
     line-height: 16px;
     align-items: center;
@@ -54,3 +69,15 @@
     color: #434242;
   }
   
+  button{
+    outline: none;
+  }
+  .slick-prev:before, .slick-next:before{
+    color: black;
+    font-size: 30px;
+  }
+  @media (max-width: 767px) {
+    iframe {
+      display: none;
+    }
+  }
