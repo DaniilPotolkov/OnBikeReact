@@ -13,7 +13,7 @@ class Footer extends React.Component {
             <div className="row footer-content">
                 <div className="col-lg-2 offset-lg-1 footer-content">
                 <img src={Logo} alt='website logo' />
-                    <p className="anot">© 2020 OnBike.life - комплекты электрификации</p>
+                    <p className="anot">© 2020 OnBike.life - комплекты электрификации хуев</p>
                 </div>
                 <div className="col-lg-2 offset-lg-5 footer-content">
                     <a href="">Доставка и оплата</a> <br />
