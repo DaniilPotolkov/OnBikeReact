@@ -69,10 +69,10 @@ const products = [
 class Screen extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {showModal: false, modalId: null,};
+    this.state = { showModal: false, modalId: null, };
   }
   toggleModal(id) {
-    this.setState({ showModal: !this.state.showModal, modalId: id});
+    this.setState({ showModal: !this.state.showModal, modalId: id });
   }
   render() {
     return (
@@ -80,6 +80,9 @@ class Screen extends React.Component {
         <div className="overalContainer">
           <Header />
           <Switch>
+            <Route path="/motor">
+              <MotorScreen />
+            </Route>
             <Route path="/dostavka">
               <DeliverScreen />
             </Route>
@@ -142,10 +145,7 @@ class Screen extends React.Component {
               </div>
             </Route>
             <Route path="/">
-              <MainScreen products={products} modal={this.toggleModal.bind(this)}/>
-            </Route>
-            <Route path="/motor">
-            <MotorScreen />
+              <MainScreen products={products} modal={this.toggleModal.bind(this)} />
             </Route>
             <Route path="/battery"></Route>
             <Route path="/controller"></Route>
@@ -156,7 +156,7 @@ class Screen extends React.Component {
               <h1> 404 not found</h1>
             </Route>
           </Switch>
-          {this.state.showModal ? <Modal product={products[this.state.modalId]} toggler={this.toggleModal.bind(this)}/> : <Footer />}
+          {this.state.showModal ? <Modal product={products[this.state.modalId]} toggler={this.toggleModal.bind(this)} /> : <Footer />}
         </div>
       </Router>
     );

@@ -1,6 +1,6 @@
 import React from "react";
 import Modal from '../../Components/Modal/Modal';
-import productImg from "./../../img/complect.jpg";
+
 
 export default class MotorScreen extends React.Component {
   constructor(props) {

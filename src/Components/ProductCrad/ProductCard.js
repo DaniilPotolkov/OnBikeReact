@@ -11,7 +11,6 @@ export default class ProductCard extends React.Component {
     }
   }
   render() {
-    console.warn('product', this.props);
     
     return (
       <>
