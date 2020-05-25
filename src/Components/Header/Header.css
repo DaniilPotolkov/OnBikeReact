@@ -7,13 +7,12 @@
   background-color: #f9c402;
 }
 .nav-yellow img {
-  width: 255px;
-  height: 80px;
+  width: 250px;
+  height: 100%;
 }
 .nav-yellow button {
   margin-top: 10px;
   width: 160px;
-  height: 47.22px;
   height: 55px;
   background: #f9c402;
   border: 2px solid #434242;
@@ -30,10 +29,14 @@
   color: #434242;
 }
 .menu_item{
-  margin: auto 15px;
+ margin: auto 15px;
+ display: flex;
+ flex-wrap: nowrap;
 }
+
+
 .last {
-  margin-right: 0;
+  margin-right: 0px;
 }
 .nav-yellow button:hover {
   background: #434242;
@@ -47,7 +50,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  display: flex;
+  
   align-items: center;
   text-align: center;
 }
@@ -81,4 +84,20 @@
 
 button:focus {
   outline:0 !important
+}
+
+
+@media (max-width: 1199px) {
+  
+  .nav-yellow button{ 
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    }
+    .navbar-brand{
+      margin: 0 auto !important;
+      }
+    .last {
+      margin-right: 15px;
+    }
 }

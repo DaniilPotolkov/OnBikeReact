@@ -7,7 +7,9 @@ import MainScreen from "./Main/MainScreen";
 import DeliverScreen from './Delivery/DeliveryScreem';
 import GarantyScreen from './Garanty/GarantyScreen';
 import ContactScreen from "./Contact/ContactScreen";
+import MotorScreen from "./Motor/MotorScreen";
 import "./index1.css";
+
 
 // img
 import productImg from "./../img/complect.jpg";
@@ -142,11 +144,13 @@ class Screen extends React.Component {
             <Route path="/">
               <MainScreen products={products} modal={this.toggleModal.bind(this)}/>
             </Route>
-            <Route path=""></Route>
-            <Route path=""></Route>
-            <Route path=""></Route>
-            <Route path=""></Route>
-            <Route path=""></Route>
+            <Route path="/motor">
+            <MotorScreen />
+            </Route>
+            <Route path="/battery"></Route>
+            <Route path="/controller"></Route>
+            <Route path="/accessories"></Route>
+            <Route path="/electro-bike"></Route>
             <Route path="*">
               <h1>Doesn`t exist</h1>
               <h1> 404 not found</h1>
