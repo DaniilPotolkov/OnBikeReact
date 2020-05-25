@@ -7,7 +7,6 @@ export default class ModalComponent extends React.Component {
         alert(`Вы купили ${product_name}`);
     }
   render() {
-    console.warn(this.props.product);
     return (
       <div className="absolute-modal">
         <div className="container">
