@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 
+.menu_item{
+  text-decoration:none !important;
+}
+
 .header{
   padding: 0;
 }
@@ -85,11 +89,13 @@
 button:focus {
   outline:0 !important
 }
-
+a{
+  text-decoration: none;
+}
 
 @media (max-width: 1199px) {
   
-  .nav-yellow button{ 
+  .nav-yellow button, .navbar-toggler, .menu_item{ 
     display: block;
     margin: 0 auto;
     margin-bottom: 15px;
@@ -97,7 +103,5 @@ button:focus {
     .navbar-brand{
       margin: 0 auto !important;
       }
-    .last {
-      margin-right: 15px;
-    }
+
 }

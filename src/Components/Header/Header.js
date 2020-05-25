@@ -27,7 +27,7 @@ class Header extends React.Component {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto menu">
-              <Nav><NavLink to="/gotov" activeClassName="selected" className="menu_item" > <button onclick="this.blur();">Готовые наборы</button> </NavLink></Nav>
+              <Nav><NavLink to="/Ready" activeClassName="selected" className="menu_item" > <button onclick="this.blur();">Готовые наборы</button> </NavLink></Nav>
               <Nav><NavLink to="/motor" activeClassName="selected" className="menu_item" > <button onclick="this.blur();">Мотор-колеса</button> </NavLink></Nav>
               <Nav><NavLink to="/battery" activeClassName="selected" className="menu_item" > <button onclick="this.blur();">Аккумуляторы</button> </NavLink></Nav>
               <Nav><NavLink to="/controller" activeClassName="selected" className="menu_item" > <button onclick="this.blur();">Контроллеры</button> </NavLink></Nav>

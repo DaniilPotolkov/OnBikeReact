@@ -2,7 +2,7 @@ import React from "react";
 import Modal from "../../Components/Modal/Modal";
 import ProductCard from "../../Components/ProductCrad/ProductCard";
 
-export default class MotorScreen extends React.Component {
+export default class ElectroBikeScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = { showModal: false, modalId: null };
@@ -14,7 +14,7 @@ export default class MotorScreen extends React.Component {
     return (
       <>
         <div className="all">
-          <h2 className="zagolovok">Мотор-колеса</h2>
+          <h2 className="zagolovok">Электровелосипеды</h2>
           <div className="container">
             <div className="wrapper">
               {this.props.products.map((product) => {

@@ -23,7 +23,7 @@ export default class ProductCard extends React.Component {
             />
             <p>{this.props.product ? this.props.product.name : null}</p>
             <p className="price">
-              {this.props.product ? this.props.product.price : null}₽
+              {this.props.product ? this.props.product.price : null}
             </p>
             <button
               className="podrobnee"

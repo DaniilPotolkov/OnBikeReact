@@ -46,6 +46,10 @@
   text-align: center;
   color: #434242;
 }
+body .modal-open {
+  overflow: hidden !important;
+}
+
 .absolute-modal {
   background-color: white;
   z-index: 9999;
@@ -54,6 +58,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  overflow: hidden;
 }
 .modal-container {
   display: flex;
