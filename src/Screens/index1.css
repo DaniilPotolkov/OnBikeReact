@@ -38,10 +38,10 @@
 .tovar {
     margin: 10px;
     padding: 10px;
-    border: 0px solid #434242;
+    
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(41, 41, 41, 0.986);
-    width: 243px;
+    
   }
  .tovar img {
     margin: 0 auto;
@@ -86,7 +86,9 @@ button{
   }
 
   
-  
+  .page-tovar .tovar{
+    width: 243px;
+  }
 
   
   .slick-prev:before, .slick-next:before{

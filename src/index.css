@@ -49,7 +49,10 @@
 body .modal-open {
   overflow: hidden !important;
 }
-
+.button-close {
+  border: none;
+  outline: none;
+}
 .absolute-modal {
   background-color: white;
   z-index: 9999;
@@ -81,7 +84,6 @@ body .modal-open {
 .modal-text {
   flex-direction: column;
   flex: 1;
-
 }
 .product-name-modal {
   font-size: 24px;
@@ -91,6 +93,8 @@ body .modal-open {
   padding-right: 1px;
 }
 .product-price-modal {
+  margin-top: 6px;
+  text-align: right;
   font-size: 20px;
   line-height: 1.35;
 }
@@ -98,9 +102,10 @@ img.modal-close-button {
   position: absolute;
   right: 20px;
   height: 30px;
-  top: 40px
+  top: 10px;
+  color: darkred;
 }
-.modal-button{
+.modal-button {
   height: 45px;
   min-width: 100px;
   width: 100%;
@@ -108,8 +113,136 @@ img.modal-close-button {
   border: 0;
   border-radius: 5px;
 }
-.modal-description{
+.modal-description {
   background-color: white;
   padding-top: 18px;
   padding-bottom: 40px;
+}
+.slider_holder {
+  padding: 0px;
+}
+
+hr {
+  background-color: #f9c402;
+}
+
+.busket-img img {
+  width: 170px;
+  height: 135px;
+  display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.busket-name,
+.busket-price {
+  position: relative;
+  top: 50%;
+  margin-top: -12px;
+  text-align: center;
+}
+
+.busket-row {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+.btn-add,
+.btn-del {
+  align-items: center;
+  width: 110px;
+  position: relative;
+  top: 18%;
+left: 50%;
+transform: translate(-100%, 0);
+  
+  
+}
+.btn-del{
+  margin-bottom: 36px;
+}
+
+.btn-add {
+  margin-top: 10px;
+  background: #f9c402;
+  border: 2px solid #434242;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 17px;
+  align-items: center;
+  text-align: center;
+  transition-duration: 0.5s;
+  color: #434242;
+}
+
+.btn-add:hover {
+  background: #434242;
+  color: #ffffff;
+  border: solid #f9c402;
+}
+
+.btn-del {
+  margin-top: 10px;
+  background: lightcoral;
+  border: 2px solid #434242;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 17px;
+  align-items: center;
+  text-align: center;
+  transition-duration: 0.5s;
+  color: #434242;
+}
+
+.btn-del:hover {
+  background: #434242;
+  color: #ffffff;
+  border: solid lightcoral;
+}
+.btn-buy {
+  align-items: center;
+  width: 130px;
+  position: relative;
+  left: 50%;
+transform: translate(-50%, 0);
+}
+.btn-buy {
+  height: 47px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: greenyellow;
+  border: 2px solid #434242;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 17px;
+  align-items: center;
+  text-align: center;
+  transition-duration: 0.5s;
+  color: #434242;
+}
+
+.btn-buy:hover {
+  background: lightgreen;
+  color: black;
+  border: solid greenyellow;
+}
+
+.many-tovar, .sum-tovar {
+  position: relative;
+  top: 50%;
+  margin-top: -12px;
+  text-align: center;
 }

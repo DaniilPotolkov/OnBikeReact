@@ -1,5 +1,6 @@
 import React from "react";
 import Modal from './../Modal/Modal'
+import { Button } from "react-bootstrap";
 import productImg from "./../../img/complect.jpg";
 
 export default class ProductCard extends React.Component {
@@ -14,8 +15,7 @@ export default class ProductCard extends React.Component {
     
     return (
       <>
-      <div className="">
-        <div className="">
+      
           <div className="tovar">
             <img
               src={this.props.product ? this.props.product.img : null}
@@ -25,15 +25,13 @@ export default class ProductCard extends React.Component {
             <p className="price">
               {this.props.product ? this.props.product.price : null}
             </p>
-            <button
-              className="podrobnee"
-              onClick={() => this.props.modal(this.props.product.product_id)}
+            <button type="button" className=" podrobnee" data-toggle="modal" data-target="#exampleModalLong"
+            onClick={() => this.props.modal(this.props.product.product_id)}
             >
               Подробнее о товаре
             </button>
           </div>
-        </div>
-      </div>
+      
       
       </>
     );

@@ -13,6 +13,7 @@ import AccumScreen from "./Accum/AccumScreen"
 import ControllerScreen from "./Controller/ControllerScreen"
 import AccessoriesScreen from "./Accessories/AccessoriesScreen"
 import ElectroBikeScreen from "./Electro-bike/Electro-bikeScreen"
+import BusketScreen from "./Busket/BusketScreen"
 import "./index1.css";
 
 
@@ -93,7 +94,9 @@ class Screen extends React.Component {
           <Header />
           <Switch>
             <Route path="/motor">
+            <div className="page-tovar">
               <MotorScreen  products={products}  modal={this.toggleModal.bind(this)}/>
+              </div>
             </Route>
             <Route path="/dostavka">
               <DeliverScreen />
@@ -104,20 +107,33 @@ class Screen extends React.Component {
             <Route path="/contact">
               <ContactScreen />
             </Route>
+            <Route path="/busket">
+              <BusketScreen products={products}  modal={this.toggleModal.bind(this)}/>
+            </Route>
             <Route path="/ready">
-            <ReadyScreen  products={products}  modal={this.toggleModal.bind(this)}/>
+              <div className="page-tovar">
+                <ReadyScreen  products={products}  modal={this.toggleModal.bind(this)}/>
+              </div>
             </Route>
             <Route path="/battery">
+            <div className="page-tovar">
             <AccumScreen  products={products}  modal={this.toggleModal.bind(this)}/>
+            </div>
             </Route>
             <Route path="/controller">
+            <div className="page-tovar">
             <ControllerScreen  products={products}  modal={this.toggleModal.bind(this)}/>
+            </div>
             </Route>
             <Route path="/accessories">
+            <div className="page-tovar">
             <AccessoriesScreen  products={products}  modal={this.toggleModal.bind(this)}/>
+            </div>
             </Route>
             <Route path="/electro-bike">
+            <div className="page-tovar">
             <ElectroBikeScreen  products={products}  modal={this.toggleModal.bind(this)}/>
+             </div>
             </Route>
             <Route path="/">
               <MainScreen products={products} modal={this.toggleModal.bind(this)} />
