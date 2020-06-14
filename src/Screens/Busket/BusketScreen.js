@@ -5,7 +5,7 @@ import BusketCard from "./../../Components/BusketCard/BusketCard"
 import { connect } from 'react-redux'
 
 // actions
-import actionAddToCart, { actionDelFromCart } from './../../Redux/actions'
+import actionAddToCart, { actionDelFromCart, actionIncCartGood } from './../../Redux/actions'
 
 class BusketScreen extends React.Component {
   constructor(props) {
@@ -14,6 +14,14 @@ class BusketScreen extends React.Component {
       showModal: false,
       modalId: null,
     };
+  }
+  count() {
+    const { cart } = this.props
+    let cunt = 0
+    cart.forEach(item => {
+      cunt += item.good_count
+    });
+    return cunt
   }
   sum() {
     const { cart } = this.props
@@ -24,7 +32,7 @@ class BusketScreen extends React.Component {
     return price
   }
   render() {
-    const { cart } = this.props
+    const { cart, delFromCart, incCartGood } = this.props
     return (
       <>
         <h2>
@@ -34,7 +42,7 @@ class BusketScreen extends React.Component {
           <div className="busket-row">
             <div className="row">
               <div className="col-lg-3 offset-lg-2 col-md-3 offset-lg-2">
-                <p className="many-tovar">Количество товаров: <span className="bold">{`${cart.length}`}</span></p>
+                <p className="many-tovar">Количество товаров: <span className="bold">{`${this.count()}`}</span></p>
               </div>
               <div className="col-lg-3 col-md-3">
                 <p className="sum-tovar"> Сумма цены товаров: <span className="bold">{`${this.sum()}`}р.</span></p>
@@ -50,7 +58,7 @@ class BusketScreen extends React.Component {
         </div>
         {
           cart.map((item, i) => {
-            return <BusketCard cart={item} />
+            return <BusketCard cart={item} del={delFromCart} inc={incCartGood} />
           })
         }
 
@@ -67,7 +75,8 @@ const mapStateToPorps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     addToCart: (e) => dispatch(actionAddToCart(e)),
-    delFromCart: (e) => dispatch(actionDelFromCart(e))
+    delFromCart: (e) => dispatch(actionDelFromCart(e)),
+    incCartGood: (e) => dispatch(actionIncCartGood(e))
   }
 }
 

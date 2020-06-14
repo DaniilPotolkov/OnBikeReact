@@ -8,6 +8,19 @@ export default class BusketScreen extends React.Component {
       modalId: null,
     };
   }
+  delete() {
+    const { cart, del } = this.props
+    del(cart.product_id)
+    console.warn('press dec');
+
+  }
+  incrise() {
+    const { cart, inc } = this.props
+    inc(cart.product_id)
+    console.warn('press inc');
+
+  }
+
   render() {
     const { cart } = this.props
     console.warn(cart);
@@ -34,8 +47,8 @@ export default class BusketScreen extends React.Component {
                 </p>
               </div>
               <div className="col-lg-2 offset-lg-1">
-                <button className="btn-add">Добавить</button>
-                <button className="btn-del">Удалить</button>
+                <button className="btn-add" onClick={() => this.incrise()}>Добавить</button>
+                <button className="btn-del" onClick={() => this.delete()}>Удалить</button>
               </div>
             </div>
           </div>
