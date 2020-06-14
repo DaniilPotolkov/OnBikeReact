@@ -26,7 +26,7 @@ const products = [
     name: "Комплект 1 электрификации Лайт 250",
     price: "21 000р.",
     img: productImg,
-   
+
   },
   {
     product_id: 1,
@@ -94,8 +94,8 @@ class Screen extends React.Component {
           <Header />
           <Switch>
             <Route path="/motor">
-            <div className="page-tovar">
-              <MotorScreen  products={products}  modal={this.toggleModal.bind(this)}/>
+              <div className="page-tovar">
+                <MotorScreen products={products} modal={this.toggleModal.bind(this)} />
               </div>
             </Route>
             <Route path="/dostavka">
@@ -108,37 +108,37 @@ class Screen extends React.Component {
               <ContactScreen />
             </Route>
             <Route path="/busket">
-              <BusketScreen products={products}  modal={this.toggleModal.bind(this)}/>
+              <BusketScreen products={products} modal={this.toggleModal.bind(this)} />
             </Route>
             <Route path="/ready">
               <div className="page-tovar">
-                <ReadyScreen  products={products}  modal={this.toggleModal.bind(this)}/>
+                <ReadyScreen products={products} modal={this.toggleModal.bind(this)} />
               </div>
             </Route>
             <Route path="/battery">
-            <div className="page-tovar">
-            <AccumScreen  products={products}  modal={this.toggleModal.bind(this)}/>
-            </div>
+              <div className="page-tovar">
+                <AccumScreen products={products} modal={this.toggleModal.bind(this)} />
+              </div>
             </Route>
             <Route path="/controller">
-            <div className="page-tovar">
-            <ControllerScreen  products={products}  modal={this.toggleModal.bind(this)}/>
-            </div>
+              <div className="page-tovar">
+                <ControllerScreen products={products} modal={this.toggleModal.bind(this)} />
+              </div>
             </Route>
             <Route path="/accessories">
-            <div className="page-tovar">
-            <AccessoriesScreen  products={products}  modal={this.toggleModal.bind(this)}/>
-            </div>
+              <div className="page-tovar">
+                <AccessoriesScreen products={products} modal={this.toggleModal.bind(this)} />
+              </div>
             </Route>
             <Route path="/electro-bike">
-            <div className="page-tovar">
-            <ElectroBikeScreen  products={products}  modal={this.toggleModal.bind(this)}/>
-             </div>
+              <div className="page-tovar">
+                <ElectroBikeScreen products={products} modal={this.toggleModal.bind(this)} />
+              </div>
             </Route>
             <Route path="/">
-              <MainScreen products={products} modal={this.toggleModal.bind(this)} />
+              <MainScreen modal={this.toggleModal.bind(this)} />
             </Route>
-            
+
             <Route path="*">
               <h1>Doesn`t exist</h1>
               <h1> 404 not found</h1>
