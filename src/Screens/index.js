@@ -16,6 +16,12 @@ import ElectroBikeScreen from "./Electro-bike/Electro-bikeScreen"
 import BusketScreen from "./Busket/BusketScreen"
 import "./index1.css";
 
+// Redux
+import { connect } from 'react-redux'
+
+// actions
+import actionAddToCart, { actionDelFromCart } from './../Redux/actions'
+
 
 // img
 import productImg from "./../img/complect.jpg";
@@ -144,11 +150,16 @@ class Screen extends React.Component {
               <h1> 404 not found</h1>
             </Route>
           </Switch>
-          {this.state.showModal ? <Modal product={products[this.state.modalId]} toggler={this.toggleModal.bind(this)} /> : <Footer />}
+          {this.state.showModal ? <Modal product={products[this.state.modalId]} add={this.props.addToCart} toggler={this.toggleModal.bind(this)} /> : <Footer />}
         </div>
       </Router>
     );
   }
 }
-
-export default Screen;
+const mapDispatchToProps = (dispatch) => {
+  return {
+    addToCart: (e) => dispatch(actionAddToCart(e)),
+    delFromCart: (e) => dispatch(actionDelFromCart(e))
+  }
+}
+export default connect(null, mapDispatchToProps)(Screen);
