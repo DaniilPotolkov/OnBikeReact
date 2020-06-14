@@ -12,7 +12,16 @@ export default class ModalComponent extends React.Component {
     this.props.add(good)
     alert(`Вы купили ${product_name}`);
   }
+  exist(product) {
+    const { cart } = this.props
+    let a = false
+    cart.forEach(item => {
+      if (item.product_id === product.product_id) { a = true }
+    })
+    return a
+  }
   render() {
+    const { product } = this.props
     return (
       <Modal show={true} dialogClassName={"primaryModal"} size="xl">
 
@@ -41,7 +50,7 @@ export default class ModalComponent extends React.Component {
                 </p>
               </div>
               <div className="col-lg-4">
-                <button className="modal-button" onClick={() => this.buy(this.props.product ? this.props.product.name : 'товар', this.props.product)}>Купить</button>
+                {!this.exist(product) ? <button className="modal-button" onClick={() => this.buy(this.props.product ? this.props.product.name : 'товар', this.props.product)}>Купить</button> : <button className="modal-button">Уже в корзине</button>}
               </div>
             </div>
 

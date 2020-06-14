@@ -94,7 +94,7 @@ class Screen extends React.Component {
     this.setState({ showModal: !this.state.showModal, modalId: id });
   }
   render() {
-    const { products, kit } = this.props
+    const { products, kit, cart } = this.props
     return (
       <Router>
         <div className="overalContainer">
@@ -151,7 +151,7 @@ class Screen extends React.Component {
               <h1> 404 not found</h1>
             </Route>
           </Switch>
-          {this.state.showModal ? <Modal product={products[this.state.modalId]} add={this.props.addToCart} toggler={this.toggleModal.bind(this)} /> : <Footer />}
+          {this.state.showModal ? <Modal product={products[this.state.modalId]} cart={cart} add={this.props.addToCart} toggler={this.toggleModal.bind(this)} /> : <Footer />}
         </div>
       </Router>
     );

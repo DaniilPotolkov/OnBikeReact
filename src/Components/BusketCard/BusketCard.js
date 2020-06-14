@@ -1,5 +1,4 @@
 import React from "react";
-import productImg from "./../../img/complect.jpg";
 export default class BusketScreen extends React.Component {
   constructor(props) {
     super(props);
