@@ -48,8 +48,11 @@ class BusketScreen extends React.Component {
           <hr />
 
         </div>
-
-        <BusketCard />
+        {
+          cart.map((item, i) => {
+            return <BusketCard cart={item} />
+          })
+        }
 
       </>
     );

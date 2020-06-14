@@ -78,6 +78,7 @@ const initState = {
       name: "Комплект 1 электрификации Лайт 250",
       price: 21000,
       img: productImg,
+      good_count: 1,
     },
   ]
 };
