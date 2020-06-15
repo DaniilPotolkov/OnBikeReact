@@ -246,3 +246,18 @@ transform: translate(-50%, 0);
   margin-top: -12px;
   text-align: center;
 }
+
+.img_holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 140px;
+    margin: 0 auto;
+  }
+  
+  img {
+    margin: auto;
+  }
+
+

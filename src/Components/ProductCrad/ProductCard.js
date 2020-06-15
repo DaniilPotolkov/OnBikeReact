@@ -31,6 +31,12 @@ export default class ProductCard extends React.Component {
               Подробнее о товаре
             </button>
           </div>
+          <div className="img_holder">
+            <img 
+            src={this.props.product ? this.props.product.img : null} 
+            alt=""          
+            />
+            </div>
       
       
       </>
