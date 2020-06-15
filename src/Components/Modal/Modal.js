@@ -60,6 +60,8 @@ export default class ModalComponent extends React.Component {
               {product.params.max_speed ? <p>Максимальная скорость: {product.params.max_speed}км\ч</p> : null}
               {product.params.battary_capacity ? <p>Время заряда аккумулятора при полном разряде: {product.params.battary_capacity} ч</p> : null}
               {product.params.max_distance ? <p>Максимальное расстояние преодолеваемое на одном заряде - {product.params.max_distance} ч (без помощи педалирования, на ровной дороге) Максимальное расстояние на одном заряде используя педалирование - зависит от того как часто помогать себе подключая мотор.</p> : null}
+              {product.params.mosh ? <p>Мощность: {product.params.mosh} Вт</p> : null}
+              {product.params.mass ? <p>Масса: ~ {product.params.mass} кг</p> : null}
               {product.params.description ? <> <p>В состав комплекта входит:</p>
                 <ul>{product.params.description.map(item => {
                   return <li>{item}</li>
