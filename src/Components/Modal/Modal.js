@@ -55,7 +55,7 @@ export default class ModalComponent extends React.Component {
             </div>
 
             <p className="bold">Описание <hr /></p>
-            <div className="modal-description">
+            {product.params ? <div className="modal-description">
               {product.params.max_speed ? <p>Максимальная скорость: {product.params.max_speed}км\ч</p> : null}
               {product.params.battary_capacity ? <p>Время заряда аккумулятора при полном разряде: {product.params.battary_capacity} ч</p> : null}
               {product.params.max_distance ? <p>Максимальное расстояние преодолеваемое на одном заряде - {product.params.max_distance} ч (без помощи педалирования, на ровной дороге) Максимальное расстояние на одном заряде используя педалирование - зависит от того как часто помогать себе подключая мотор.</p> : null}
@@ -64,7 +64,7 @@ export default class ModalComponent extends React.Component {
                   return <li>{item}</li>
                 })}
                 </ul> </> : null}
-            </div>
+            </div> : null}
 
             {/* <pre className="modal-description">{this.props.product ? `${this.props.product.description}` : null}</pre> */}
           </div>
