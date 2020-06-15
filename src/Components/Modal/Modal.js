@@ -10,7 +10,6 @@ export default class ModalComponent extends React.Component {
 
   buy(product_name, good) {
     this.props.add(good)
-    alert(`Вы купили ${product_name}`);
   }
   exist(product) {
     const { cart } = this.props
@@ -62,11 +61,24 @@ export default class ModalComponent extends React.Component {
               {product.params.max_distance ? <p>Максимальное расстояние преодолеваемое на одном заряде - {product.params.max_distance} ч (без помощи педалирования, на ровной дороге) Максимальное расстояние на одном заряде используя педалирование - зависит от того как часто помогать себе подключая мотор.</p> : null}
               {product.params.mosh ? <p>Мощность: {product.params.mosh} Вт</p> : null}
               {product.params.mass ? <p>Масса: ~ {product.params.mass} кг</p> : null}
-              {product.params.description ? <> <p>В состав комплекта входит:</p>
+              {product.params.description ? <> <p>В состав комплекта входит:</p >
                 <ul>{product.params.description.map(item => {
                   return <li>{item}</li>
-                })}
+                }) }
                 </ul> </> : null}
+
+                {product.params.haraks ? <> <p>Характеристики:</p >
+                <ul>{product.params.haraks.map(item => {
+                  return <li>{item}</li>
+                }) }
+                </ul> </> : null}
+
+                {product.params.opisanie ? <> <p></p >
+                <ul>{product.params.opisanie.map(item => {
+                  return <li>{item}</li>
+                }) }
+                </ul> </> : null}
+                
             </div> : null }
             </div>
           </div>

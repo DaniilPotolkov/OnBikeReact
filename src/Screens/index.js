@@ -94,7 +94,7 @@ class Screen extends React.Component {
     this.setState({ showModal: !this.state.showModal, modalId: id });
   }
   render() {
-    const { products, kit, cart } = this.props
+    const { products, kit1, kit2, kit3, kit4, kit5, kit6, cart } = this.props
     return (
       <Router>
         <div className="overalContainer">
@@ -102,7 +102,7 @@ class Screen extends React.Component {
           <Switch>
             <Route path="/motor">
               <div className="page-tovar">
-                <MotorScreen products={products} modal={this.toggleModal.bind(this)} />
+                <MotorScreen products={kit2} modal={this.toggleModal.bind(this)} />
               </div>
             </Route>
             <Route path="/dostavka">
@@ -115,31 +115,31 @@ class Screen extends React.Component {
               <ContactScreen />
             </Route>
             <Route path="/busket">
-              <BusketScreen products={products} modal={this.toggleModal.bind(this)} />
+              <BusketScreen products={kit2} modal={this.toggleModal.bind(this)} />
             </Route>
             <Route path="/ready">
               <div className="page-tovar">
-                <ReadyScreen products={kit} modal={this.toggleModal.bind(this)} />
+                <ReadyScreen products={kit1} modal={this.toggleModal.bind(this)} />
               </div>
             </Route>
             <Route path="/battery">
               <div className="page-tovar">
-                <AccumScreen products={kit} modal={this.toggleModal.bind(this)} />
+                <AccumScreen products={kit3} modal={this.toggleModal.bind(this)} />
               </div>
             </Route>
             <Route path="/controller">
               <div className="page-tovar">
-                <ControllerScreen products={kit} modal={this.toggleModal.bind(this)} />
+                <ControllerScreen products={kit4} modal={this.toggleModal.bind(this)} />
               </div>
             </Route>
             <Route path="/accessories">
               <div className="page-tovar">
-                <AccessoriesScreen products={kit} modal={this.toggleModal.bind(this)} />
+                <AccessoriesScreen products={kit5} modal={this.toggleModal.bind(this)} />
               </div>
             </Route>
             <Route path="/electro-bike">
               <div className="page-tovar">
-                <ElectroBikeScreen products={kit} modal={this.toggleModal.bind(this)} />
+                <ElectroBikeScreen products={kit6} modal={this.toggleModal.bind(this)} />
               </div>
             </Route>
             <Route path="/">
@@ -167,7 +167,12 @@ const mapStateToPorps = (state) => {
   return {
     products: state.products,
     cart: state.cart,
-    kit: state.kit1,
+    kit1: state.kit1,
+    kit2: state.kit2,
+    kit3: state.kit3,
+    kit4: state.kit4,
+    kit5: state.kit5,
+    kit6: state.kit6,
   }
 };
 export default connect(mapStateToPorps, mapDispatchToProps)(Screen);
