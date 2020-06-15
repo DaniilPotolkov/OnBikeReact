@@ -65,7 +65,17 @@
 button{
     outline: none;
   }
-
+.img_holder{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 140px;
+  margin: 0 auto;
+}
+img{
+  margin: auto;
+}
 .podrobnee {
     margin-left: 10%;
     width: 80%;

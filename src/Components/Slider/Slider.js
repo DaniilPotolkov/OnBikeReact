@@ -51,7 +51,7 @@ export default class CustomSlider extends React.Component {
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 768,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
@@ -67,18 +67,18 @@ export default class CustomSlider extends React.Component {
         }
       ]
     };
-    
+
     return (
       <div className="slider_holder">
-      <Slider {...settings}>
-        {this.props.products.map((product) => {
-          return (
-            <div className="">
-              <ProductCard product={product} modal={this.props.modal}/>
-            </div>
-          );
-        })}
-      </Slider>
+        <Slider {...settings}>
+          {this.props.products.map((product) => {
+            return (
+              <div className="">
+                <ProductCard product={product} modal={this.props.modal} />
+              </div>
+            );
+          })}
+        </Slider>
       </div>
     );
   }

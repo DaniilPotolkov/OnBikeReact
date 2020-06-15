@@ -5,7 +5,7 @@ const initState = {
       product_id: 0,
       name: "Комплект 1 электрификации Лайт 250",
       price: 21000,
-      img: productImg,
+      img: 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png',
       params: {
         max_speed: 35,
         battary_capacity: 3,
