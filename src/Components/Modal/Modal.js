@@ -55,7 +55,18 @@ export default class ModalComponent extends React.Component {
             </div>
 
             <p className="bold">Описание <hr /></p>
-            <p className="modal-description">{this.props.product ? this.props.product.description : null}</p>
+            <div className="modal-description">
+              {product.params.max_speed ? <p>Максимальная скорость: {product.params.max_speed}км\ч</p> : null}
+              {product.params.battary_capacity ? <p>Время заряда аккумулятора при полном разряде: {product.params.battary_capacity} ч</p> : null}
+              {product.params.max_distance ? <p>Максимальное расстояние преодолеваемое на одном заряде - {product.params.max_distance} ч (без помощи педалирования, на ровной дороге) Максимальное расстояние на одном заряде используя педалирование - зависит от того как часто помогать себе подключая мотор.</p> : null}
+              {product.params.description ? <> <p>В состав комплекта входит:</p>
+                <ul>{product.params.description.map(item => {
+                  return <li>{item}</li>
+                })}
+                </ul> </> : null}
+            </div>
+
+            {/* <pre className="modal-description">{this.props.product ? `${this.props.product.description}` : null}</pre> */}
           </div>
         </ModalBody>
         <ModalFooter><button className="btn" onClick={() => this.props.toggler(this.props.product)}>Закрыть</button> </ModalFooter>
