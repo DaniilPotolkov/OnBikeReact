@@ -16,7 +16,6 @@
 }
 .all .tovar img {
   margin: 0 auto;
-  width: 100%;
 }
 .all .tovar p {
   margin: 0 auto;
@@ -256,8 +255,9 @@ transform: translate(-50%, 0);
     margin: 0 auto;
   }
   
-  img {
+  .img_holder img {
     margin: auto;
+    height: 100%;
   }
 
 
