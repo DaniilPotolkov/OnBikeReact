@@ -4,6 +4,7 @@ export default class ContactScreen extends React.Component {
   render() {
     return (
       <>
+      <div className="wrap">
         <h2>Пожалуйста, согласовывайте Ваш приезд для подготовки заказа</h2>
         <div className="container">
           <div className="row">
@@ -34,6 +35,7 @@ export default class ContactScreen extends React.Component {
               ></iframe>
             </div>
           </div>
+        </div>
         </div>
       </>
     );

@@ -35,6 +35,7 @@ class BusketScreen extends React.Component {
     const { cart, delFromCart, incCartGood } = this.props
     return (
       <>
+      <div className="wrap">
         <h2>
           Корзина
         </h2>
@@ -61,7 +62,7 @@ class BusketScreen extends React.Component {
             return <BusketCard cart={item} del={delFromCart} inc={incCartGood} />
           })
         }
-
+        </div>
       </>
     );
   }

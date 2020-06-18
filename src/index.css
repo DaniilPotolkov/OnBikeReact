@@ -1,3 +1,4 @@
+
 .main-tovar {
   flex-direction: row;
   flex-wrap: wrap;
@@ -7,6 +8,11 @@
 .all {
   flex: 1;
   margin-top: 31px;
+  min-height: calc(100vh - 191.69px - 215px);
+  margin-bottom: 20px;
+}
+.wrap{
+  min-height: calc(100vh - 180px - 215px);
 }
 .all .tovar {
   margin: 10px;
