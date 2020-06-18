@@ -7,12 +7,11 @@
 
 .all {
   flex: 1;
-  margin-top: 31px;
-  min-height: calc(100vh - 191.69px - 215px);
-  margin-bottom: 20px;
+  
+  min-height: calc(100vh - 191.69px - 185px);
 }
 .wrap{
-  min-height: calc(100vh - 180px - 215px);
+  min-height: calc(100vh - 191.69px - 185px);
 }
 .all .tovar {
   margin: 10px;
@@ -50,6 +49,11 @@
   align-items: center;
   text-align: center;
   color: #434242;
+  transition-duration: 0.3s;
+}
+.all .tovar .podrobnee:hover{
+  background: #434242;
+  color: white;
 }
 body .modal-open {
   overflow: hidden !important;
