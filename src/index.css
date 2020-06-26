@@ -8,7 +8,6 @@
 .all {
   flex: 1;
   min-height: calc(100vh - 345px);
-);
 }
 .wrap{
   min-height: calc(100vh - 345px);
