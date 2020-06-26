@@ -37,7 +37,7 @@ export default class BusketScreen extends React.Component {
               </div>
               <div className="col-lg-3">
                 <p className="busket-price">
-                  {`x${cart.good_count} ${cart.good_count * cart.price} р.`}
+                  {`x${cart.good_count} ${cart.good_count * cart.price} `} &#8381;
                 </p>
               </div>
               <div className="col-lg-2 offset-lg-1">

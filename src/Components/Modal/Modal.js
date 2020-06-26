@@ -45,7 +45,7 @@ export default class ModalComponent extends React.Component {
               </div>
               <div className="col-lg-2">
                 <p className="product-price-modal">
-                  {this.props.product ? this.props.product.price : null}
+                  {this.props.product ? this.props.product.price : null} &#8381;
                 </p>
               </div>
               <div className="col-lg-4">

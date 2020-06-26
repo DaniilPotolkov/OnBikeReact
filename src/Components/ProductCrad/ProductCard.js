@@ -25,7 +25,7 @@ export default class ProductCard extends React.Component {
           </div>
           <p>{this.props.product ? this.props.product.name : null}</p>
           <p className="price">
-            {this.props.product ? this.props.product.price : null}
+            {this.props.product ? this.props.product.price : null} &#8381;
           </p>
           <button type="button" className=" podrobnee" data-toggle="modal" data-target="#exampleModalLong"
             onClick={() => this.props.modal(this.props.product.product_id)}

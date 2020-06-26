@@ -86,7 +86,7 @@ body .modal-open {
   margin: 0 auto;
 }
 .modal-img {
-  max-width: 100%;
+  max-width: 80%;
   flex: 2;
 }
 .modal-text {
@@ -123,8 +123,7 @@ img.modal-close-button {
 }
 .modal-description {
   background-color: white;
-  padding-top: 18px;
-  padding-bottom: 40px;
+  
 }
 .slider_holder {
   padding: 0px;

@@ -53,7 +53,7 @@ class BusketScreen extends React.Component {
                   <p className="sum-tovar">
                     {" "}
                     Сумма цены товаров:{" "}
-                    <span className="bold">{`${this.sum()}`}р.</span>
+                    <span className="bold">{`${this.sum()}`}&#8381;</span>
                   </p>
                 </div>
                 <div className="col-lg-4 col-md-4">
