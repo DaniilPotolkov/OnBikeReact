@@ -8,10 +8,10 @@
 .all {
   flex: 1;
   
-  min-height: calc(100vh - 191.69px - 185px);
+  min-height: calc(100vh - 345px);
 }
 .wrap{
-  min-height: calc(100vh - 191.69px - 185px);
+  min-height: calc(100vh - 345px);
 }
 .all .tovar {
   margin: 10px;
