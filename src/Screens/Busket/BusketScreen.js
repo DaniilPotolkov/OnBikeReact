@@ -8,6 +8,7 @@ import { connect } from "react-redux";
 import actionAddToCart, {
   actionDelFromCart,
   actionIncCartGood,
+  actionDecCartGood,
 } from "./../../Redux/actions";
 
 class BusketScreen extends React.Component {
@@ -35,7 +36,7 @@ class BusketScreen extends React.Component {
     return price;
   }
   render() {
-    const { cart, delFromCart, incCartGood } = this.props;
+    const { cart, delFromCart, incCartGood, decCartGood } = this.props;
     return (
       <>
         <div className="wrap">
@@ -63,7 +64,7 @@ class BusketScreen extends React.Component {
           </div>
           {cart.map((item, i) => {
             return (
-              <BusketCard cart={item} del={delFromCart} inc={incCartGood} />
+              <BusketCard cart={item} del={delFromCart} dec={decCartGood} inc={incCartGood} />
             );
           })}
         </div>
@@ -80,6 +81,7 @@ const mapStateToPorps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     addToCart: (e) => dispatch(actionAddToCart(e)),
+    decCartGood: (e) => dispatch(actionDecCartGood(e)),
     delFromCart: (e) => dispatch(actionDelFromCart(e)),
     incCartGood: (e) => dispatch(actionIncCartGood(e)),
   };
