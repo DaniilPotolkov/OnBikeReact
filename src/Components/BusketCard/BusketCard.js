@@ -8,8 +8,8 @@ export default class BusketScreen extends React.Component {
     };
   }
   delete() {
-    const { cart, del } = this.props;
-    del(cart.product_id);
+    const { cart, dec } = this.props;
+    dec(cart.product_id);
     console.warn("press dec");
   }
   incrise() {
@@ -20,8 +20,6 @@ export default class BusketScreen extends React.Component {
 
   render() {
     const { cart } = this.props;
-    console.warn(cart);
-
     return (
       <>
         <div className="container">
