@@ -8,9 +8,13 @@ export default class BusketScreen extends React.Component {
     };
   }
   delete() {
-    const { cart, dec } = this.props;
-    dec(cart.product_id);
-    console.warn("press dec");
+    const { cart, dec, del } = this.props;
+    if (cart.good_count > 1) {
+      dec(cart.product_id);
+      console.warn("press dec");
+    } else {
+      del(cart.product_id);
+    }
   }
   incrise() {
     const { cart, inc } = this.props;
