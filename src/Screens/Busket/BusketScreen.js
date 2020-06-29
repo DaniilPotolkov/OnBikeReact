@@ -8,7 +8,6 @@ import { connect } from "react-redux";
 import actionAddToCart, {
   actionDelFromCart,
   actionIncCartGood,
-  actionDecCartGood,
 } from "./../../Redux/actions";
 
 class BusketScreen extends React.Component {
@@ -36,7 +35,7 @@ class BusketScreen extends React.Component {
     return price;
   }
   render() {
-    const { cart, delFromCart, incCartGood, decCartGood } = this.props;
+    const { cart, delFromCart, incCartGood } = this.props;
     return (
       <>
         <div className="wrap">
@@ -57,6 +56,9 @@ class BusketScreen extends React.Component {
                     <span className="bold">{`${this.sum()}`}&#8381;</span>
                   </p>
                 </div>
+                <div className="col-lg-4 col-md-4">
+                  <button className="btn-buy" onClick={()=> alert('Отправлено!')}> <p>Оплатить</p> </button>
+                </div>
               </div>
             </div>
             <p className="bold">Выбранные товары</p>
@@ -64,7 +66,7 @@ class BusketScreen extends React.Component {
           </div>
           {cart.map((item, i) => {
             return (
-              <BusketCard cart={item} del={delFromCart} dec={decCartGood} inc={incCartGood} />
+              <BusketCard cart={item} del={delFromCart} inc={incCartGood} />
             );
           })}
         </div>
@@ -81,7 +83,6 @@ const mapStateToPorps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     addToCart: (e) => dispatch(actionAddToCart(e)),
-    decCartGood: (e) => dispatch(actionDecCartGood(e)),
     delFromCart: (e) => dispatch(actionDelFromCart(e)),
     incCartGood: (e) => dispatch(actionIncCartGood(e)),
   };
